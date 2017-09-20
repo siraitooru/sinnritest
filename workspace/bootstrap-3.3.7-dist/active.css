@@ -1,0 +1,10 @@
+ul.center {
+  margin: 0;  /* 余分なマージンを消去 */
+  padding: 0; /* 余分なパディングを消去 */
+  text-align: center; /* 中央寄せ */
+}
+ 
+ul.center li {
+  list-style-type: none; /* リストのマーカーを消去 */
+  margin: 0 10px 0 0;
+}

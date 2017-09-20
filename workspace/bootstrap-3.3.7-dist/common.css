@@ -1,0 +1,89 @@
+head{
+	margin:0px 0px 200px 0px;
+	height:200px;
+}
+.header{
+	background-color:#7FFFD4;
+	padding:0px;
+	margin:0;
+}
+body{
+	margin:0;
+}
+label{
+	border: inset 5px #ff0000;
+	padding-left:0px;
+	border-left-width:15px;
+}
+
+label:hover{
+	background-color:red;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+/* ラベルのスタイル　*/
+.check label {
+	padding-left:		16px;			/* ラベルの位置 */
+	font-size:		16px;
+	line-height:		16px;
+	cursor:			pointer;
+	color:white;
+}
+
+/* ボックスのスタイル */
+
+
+
+ul{
+	height:100px;
+	width:1000px;
+	position:		relative;
+	margin: 0px; 
+}
+.main{
+	background-color:#FFC0CB;
+	height:350px;
+	background-image:url(https://prog-8.com/images/html/advanced/top.png);
+  	background-size:cover;
+  	margin:0;
+  	padding:10px 0px 0px 0px;
+}
+.footer{
+  background-color:#ceccf3;
+  height:270px;
+  position:		relative;
+}
+
+
+/*リスト要素<ul>を初期化*/
+form#form1 ul {
+	padding:0;
+	margin:0
+}
+/*<li>も初期化し、ボーダーなどを指定*/
+form#form1 ul li {
+	list-style:none;
+	margin:0 auto;
+	border-top: 2px solid #FFF;
+	font-size: 24px;
+}
+/*最初の<li>にはボーダーをつけない（:first-child疑似クラスによる指定）*/
+form#form1 ul li:first-child {
+	border-top:none;
+}
+
+
+/* span要素をブロック化しフロートでフォーム部品と横に並べる*/
+form#form1 ul li:after {
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;     /*←フロートをクリア*/
+}
+.fa{
+	background-color: #008b8b;
+}
